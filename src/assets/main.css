@@ -1,0 +1,349 @@
+@import './base.css';
+
+:root {
+  --surface: #ffffff;
+  --surface-hover: #d3d3d3;
+  --on-surface: #636363;
+  --primary: #ef6c58;
+  --primary-hover: #eb5f4a;
+  --primary-focused: #fb9383;
+  --secondary: #391400;
+  --interactive: #948bef;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+body > header{
+  position: sticky;
+  top: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+  background-color: var(--surface);
+  box-shadow: 1px 1px 2px 1px #00000033;
+}
+
+nav a {
+  width: 20%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style: none;
+  margin: auto;
+  padding: 1%;
+  overflow: hidden;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: x-large;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+}
+
+section:nth-child(1).hero {
+  background: radial-gradient(
+    farthest-corner at 40px 40px,
+    var(--primary-focused) 0%,
+    var(--interactive) 100%
+  );
+}
+
+section.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+section.row div.column {
+  width: 50%;
+  margin: auto;
+}
+
+img.slide {
+  display: none;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+article.slider {
+  width: 100%;
+  box-shadow: 0 0 10px #00000033;
+  overflow: hidden;
+}
+
+div.indicators {
+  padding: 2%;
+  padding-left: 0px;
+}
+
+div.indicators button{
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: var(--surface-hover);
+  border: none;
+}
+
+div.indicators button:hover {
+  cursor: pointer;
+  background-color: var(--primary-hover);
+}
+
+div.indicators button.active {
+  background-color: var(--primary);
+}
+
+section.row div.column h2.title {
+  font-size: xxx-large;
+  font-weight:900;
+  color: var(--secondary);
+}
+
+section.row div.column h3 {
+  color:  var(--secondary);
+  font-weight: normal;
+}
+
+div.wrapper button {
+  background-color: var(--primary);
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  padding: 2%;
+  font-weight: bold;
+  color: var(--surface);
+  font-size: large;
+  box-shadow: 1px 1px 1px 0px #06000033;
+}
+
+div.wrapper button:hover {
+  cursor: pointer;
+  background-color: var(--primary-hover);
+}
+
+div.wrapper {
+  padding-top: 3%;
+  padding-left: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:  #0c0c0c4d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 10px;
+  border: 5px;
+}
+
+footer {
+  box-shadow: 2px 2px 2px 4px #00000033;
+  padding: 3%;
+  color:  var(--secondary);
+}
+
+footer div:nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer div:nth-child(1) > img{
+  width: 15%;
+}
+
+footer > div:nth-child(1) > ul {
+  width: 85%;
+}
+
+footer > div:nth-child(2)  {
+  overflow: hidden;
+}
+
+footer div ul {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+footer div ul li {
+  list-style: none;
+  padding: 3px;
+}
+
+footer div ul li a {
+  display: flex;
+  background-color: var(--primary);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+footer div ul li a:hover {
+  cursor: pointer;
+  background-color: var(--primary-hover);
+}
+
+footer div ul li a img {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px #06000033;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-block-start-width: 0px;
+  min-height: 1px;
+}
+
+div#promotions, div#products {
+  display: grid;
+  gap: 20px;
+  padding: 0% 5%;
+  margin: 2%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+article.promotion {
+  width: 100%;
+  display: grid;
+}
+
+article.promotion img {
+  width: 100%;
+  object-fit: cover;
+}
+
+article.promotion header {
+  color: var(--secondary);
+  display: grid;
+  padding: 2% 0px;
+  grid-template-columns: 7fr 2fr 1fr;
+}
+
+article.promotion header h3:nth-child(2){
+  width: 100%;
+  text-align: end;
+}
+
+article.promotion header h4 {
+  color: var(--on-surface);
+  text-decoration:line-through;
+  text-align: end;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+article.promotion header h3:nth-child(1){
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+article.promotion header + div{
+  padding: 2% 0px;
+  color: var(--on-surface);
+  line-height: 1.5;
+}
+
+
+article.promotion div {
+  align-self: end;
+}
+
+article.promotion div button {
+  width: 100%;
+  background-color: var(--primary);
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  padding: 2%;
+  font-weight: bold;
+  color: var(--surface);
+  font-size: large;
+  box-shadow: 1px 1px 1px 0px #06000033;
+}
+
+article.promotion div button:hover {
+  cursor: pointer;
+  background-color: var(--primary-hover);
+}
+
+section > h2.title {
+  font-size: xx-large;
+  font-weight:900;
+  color: var(--secondary);
+  text-align: center;
+  overflow: hidden;
+}
+
+section.container {
+  padding: 2%;
+}
+
+
+@media screen  and (max-width: 415px){
+  div#promotions,  div#products{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  nav img {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+  }
+
+  footer div:nth-child(1) > img{
+    width: 100%;
+  }
+  footer div:nth-child(1) > ul {
+    width: 100;
+  }
+  section.row div.column {
+    width: 100%;
+    text-align: center;
+    padding: 4%;
+  }
+
+}
