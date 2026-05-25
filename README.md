@@ -123,7 +123,7 @@ El sistema permite:
 # 📂 Estructura del proyecto
 
 ```bash
-Web-Cake-Shop/
+PlataformaWebGestionReposteria/
 │
 ├── public/                 # Archivos públicos
 ├── src/
@@ -158,7 +158,7 @@ Web-Cake-Shop/
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/usuario/web-cake-shop.git
+git clone https://github.com/isairey/PlataformaWebGestionReposteria.git
 ```
 
 ---
@@ -166,7 +166,7 @@ git clone https://github.com/usuario/web-cake-shop.git
 ## 2️⃣ Entrar al proyecto
 
 ```bash
-cd web-cake-shop
+cd PlataformaWebGestionReposteria
 ```
 
 ---
@@ -245,7 +245,7 @@ npm run build
 
 <div align="center">
 
-## Luis Achique — Web Developer
+## Isai Reyes — Web Developer
 
 Desarrollador enfocado en aplicaciones web modernas y plataformas E-Commerce 🚀
 
